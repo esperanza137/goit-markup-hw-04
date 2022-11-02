@@ -113,6 +113,9 @@ ul {
   /* flex-grow: 0; */
 }
 
+.top-mail-tel::before{
+  background-image: url(./images/icons.svg);
+}
 .top-mail-tel:hover {
   color: var(--selection-color);
 }
@@ -167,6 +170,13 @@ ul {
   padding: 0;
   list-style: none;
   margin-bottom: 94px;
+}
+
+.icon{
+  all: unset;
+  background-color: var(--third-bacground-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .secondary-title {

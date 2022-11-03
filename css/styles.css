@@ -92,8 +92,6 @@ ul {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-
-  /* flex-grow: 2; */
 }
 
 .header-navigation:hover {
@@ -113,8 +111,8 @@ ul {
   /* flex-grow: 0; */
 }
 
-.top-mail-tel::before{
-  background-image: url(./images/icons.svg);
+.icon-mail:hover {
+  fill: var(--selection-color);
 }
 .top-mail-tel:hover {
   color: var(--selection-color);
@@ -172,7 +170,7 @@ ul {
   margin-bottom: 94px;
 }
 
-.icon{
+.icon {
   all: unset;
   background-color: var(--third-bacground-color);
   padding: 25px 100px;

@@ -115,6 +115,10 @@ ul {
   color: var(--selection-color);
 }
 
+.icon-mail:hover {
+  fill: var(--selection-color);
+}
+
 .top-mail-tel {
   color: var(--secondary-font-color);
   text-decoration: none;
@@ -132,9 +136,11 @@ ul {
 }
 
 .title-background {
-  background-color: var(--secondary-bacground-color);
-  color: #ffffff;
+  background-image: url('/images/img_tytul.jpg');
+  /* background-color: transparent; */
+  /* var(--secondary-bacground-color); */
   font-family: roboto;
+  color: #ffffff;
   font-weight: 900;
   width: 100%;
   max-width: 1200px;
@@ -177,6 +183,28 @@ ul {
   padding: 0;
   margin-bottom: 94px;
   list-style: none;
+}
+
+.icon {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  background-color: var(--third-bacground-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.social-media-icons {
+  all: unset;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 18px;
+}
+.icon-social {
+  all: unset;
+  background-color: var(--background-color);
+  /* fill:var(--background-color) */
+  stroke: #757575;
 }
 
 .description-text {

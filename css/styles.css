@@ -5,6 +5,7 @@
   --secondary-font-color: #757575;
   --secondary-bacground-color: #2f303a;
   --third-bacground-color: #f5f4fa;
+  --icon-color:#AFB1B8;
 }
 *,
 *::before,
@@ -211,13 +212,15 @@ ul {
 }
 .icon-social {
   all: unset;
-  fill: #AFB1B8;
+  fill: var(--icon-color);
 }
 .icon-social:hover{
   background-color: var(--selection-color);
+  transition:bg-size;
+  /* transform:hover; */
+  /* background-size:; */
   fill: white;
-  /* width: 44px;
-  height: 44px; */
+  border-radius: 50%;
 }
 
 .icon-social:focus{
@@ -265,6 +268,7 @@ ul {
   background-color: var(--third-bacground-color);
   width: 100%;
   padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 .container-our-team {
   display: flex;
@@ -299,7 +303,20 @@ ul {
 }
 .our-clients-section{
   background-color:white;
+  padding-bottom: 94px;
 }
+.our-clients{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.our-clients-icon{
+  fill: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  padding:16px 42px;
+}
+
 .footer-background {
   background-color: var(--secondary-bacground-color);
   padding-top: 60px;

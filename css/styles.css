@@ -212,23 +212,28 @@ ul {
   margin-bottom: 18px;
 }
 .icon-social {
-  all: unset;
+  /* all: unset; */
   fill: var(--icon-color);
 }
+ 
+.icon-social-bg{
+  background-color: grey;
+  background-position: ;
+  border-radius: 50%;
+  /* padding: 22px 22px; */
+  /* width: 44px;
+  height: 44px; */
+}
+
 .icon-social:hover{
   background-color: var(--selection-color);
-  transition:bg-size;
-  /* transform:hover; */
-  /* background-size:; */
+  /* transition:bg-size; */
   fill: white;
-  border-radius: 50%;
 }
 
 .icon-social:focus{
   background-color: var(--selection-color);
   fill: white;
-  width: 44px;
-  height: 44px;
 }
 
 .description-text {
@@ -357,6 +362,12 @@ a.bottom-mail-tel {
 }
 ul.bottom-mail-tel {
   list-style-type: none;
+}
+.join-us>h3{
+  display: flex;
+  font-size: 14px;
+  line-height: 1.14; 
+  color: #ffffff;
 }
 
 /* Portfolio */

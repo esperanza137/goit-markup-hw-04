@@ -205,36 +205,6 @@ ul {
   margin-bottom: 30px;
 }
 
-.social-media-icons {
-  all: unset;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 18px;
-}
-.icon-social {
-  /* all: unset; */
-  fill: var(--icon-color);
-}
- 
-.icon-social-bg{
-  background-color: grey;
-  background-position: ;
-  border-radius: 50%;
-  /* padding: 22px 22px; */
-  /* width: 44px;
-  height: 44px; */
-}
-
-.icon-social:hover{
-  background-color: var(--selection-color);
-  /* transition:bg-size; */
-  fill: white;
-}
-
-.icon-social:focus{
-  background-color: var(--selection-color);
-  fill: white;
-}
 
 .description-text {
   text-transform: none;
@@ -300,6 +270,45 @@ ul {
   text-align: center;
   padding-bottom: 30px;
 }
+
+.social-media-icons {
+  all: unset;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 18px;
+}
+
+.icon-social-bg{
+  display: flex;
+  background-color: grey;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  
+}
+.icon-social {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  fill: var(--icon-color);
+  width: 20px;
+  height: 20px;
+  }
+
+ .icon-social:hover{
+ fill: white;
+     }
+.icon-social-bg:hover{
+  background-color: var(--selection-color);
+  }
+
+
+.icon-social-bg:focus{
+  background-color: var(--selection-color);
+  fill: white;
+}
+
+
 .our-team-frame {
   background: #ffffff;
   /* material shadow v1 */
@@ -307,6 +316,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .our-clients-section{
   background-color:white;
   padding-bottom: 94px;
@@ -318,10 +328,14 @@ ul {
 }
 
 .our-clients-icon{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 170px;
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  padding:16px 42px;
+
 }
 
 .our-clients-icon:hover{
@@ -329,9 +343,10 @@ ul {
   border-color: var(--selection-color);
     cursor: pointer; 
 }
-.client-icon{
-  size: 100%;
-}
+.client-icon-svg{
+  width: 106px;
+  height: 60px;
+  }
 .footer-background {
   background-color: var(--secondary-bacground-color);
   padding-top: 60px;

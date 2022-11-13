@@ -116,9 +116,10 @@ ul {
 }
 
 .icon-mail{
-  all: unset;
+  /* all: unset; */
+  fill: var(--secondary-font-color);
 }
-.icon-mail:hover{
+.icon-mail:hover {
   fill: var(--selection-color);
 }
 .icon-mail:focus{
@@ -314,9 +315,18 @@ ul {
 .our-clients-icon{
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
+  border-radius: 4px;
   padding:16px 42px;
 }
 
+.our-clients-icon:hover{
+  fill: var(--selection-color);
+  border-color: var(--selection-color);
+    cursor: pointer; 
+}
+.client-icon{
+  size: 100%;
+}
 .footer-background {
   background-color: var(--secondary-bacground-color);
   padding-top: 60px;

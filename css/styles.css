@@ -153,7 +153,7 @@ ul {
   color: #ffffff;
   font-weight: 900;
   width: 100%;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 94px;
@@ -230,6 +230,11 @@ ul {
   text-transform: uppercase;
   /* list-style-image: none; */
 }
+.third-title>h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 .container-images {
   display: flex;
   gap: 30px;
@@ -416,7 +421,6 @@ ul.bottom-mail-tel {
   color: var(--selection-color);
 }
 ul.portfolio {
-  width: 1200px;
   list-style-type: none;
   display: flex;
   gap: 30px;
@@ -446,4 +450,5 @@ img {
 }
 .portfolio-cards {
   background: #ffffff;
+  flex-basis: calc((100% - 30px) / 4);
 }

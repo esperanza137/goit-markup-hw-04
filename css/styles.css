@@ -146,9 +146,11 @@ ul {
 .top-mail-tel-tel {
   display: flex;
 } */
+
 .title-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.6)),
-    url("/images/img_tytul.jpg");
+  url("/images/img_tytul.jpg");
+  background-size: cover;
   font-family: roboto;
   color: #ffffff;
   font-weight: 900;
@@ -346,9 +348,17 @@ ul {
   cursor: pointer;
 }
 .client-icon-svg {
-  width: 106px;
+  position: relative;
+  width: 170px;
+  height: 92px;
+}
+.client-icon-use{
+  position: absolute;
+  fill: var(--icon-color);
+    width: 106px;
   height: 60px;
 }
+
 .footer-background {
   background-color: var(--secondary-bacground-color);
   padding-top: 60px;
@@ -388,8 +398,15 @@ ul.bottom-mail-tel {
 }
 .social-icon{
   fill: #ffffff;
+  background-color: #2196f3;
+  background-size: 44px 44px;
+  border-radius: 50%;
 }
-
+.social-icons-bg{
+  background-color: #2196f3;
+  background-size: 44px 44px;
+  border-radius: 50%;
+  }
 /* Portfolio */
 
 .buttons {

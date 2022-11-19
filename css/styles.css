@@ -74,15 +74,12 @@ ul {
 .logo-studio {
   color: #ffffff;
 }
-.logo:hover {
+.logo:hover,
+.logo:focus,
+.logo:visited {
   text-decoration-color: var(--selection-color);
 }
-.logo:focus {
-  color: var(--selection-color);
-}
-.logo:visited {
-  color: var(--selection-color);
-}
+
 .header-navigation-section {
   display: flex;
   justify-content: space-between;
@@ -108,9 +105,7 @@ ul {
   margin-left: 93px;
 }
 
-.header-navigation:hover {
-  color: var(--selection-color);
-}
+.header-navigation:hover,
 .header-navigation:focus {
   color: var(--selection-color);
 }
@@ -118,14 +113,13 @@ ul {
 .icon-mail {
   fill: var(--secondary-font-color);
 }
-.icon-mail:hover {
-  fill: var(--selection-color);
-}
+.icon-mail:hover,
 .icon-mail:focus {
   fill: var(--selection-color);
 }
-.top-mail-tel{
-  all: unset;
+
+.top-mail-tel {
+  /* all: unset; */
   color: var(--secondary-font-color);
   text-decoration: none;
   list-style-type: none;
@@ -135,27 +129,23 @@ ul {
   align-items: center;
 }
 
-.top-mail-tel:hover {
-  color: var(--selection-color);
-}
+.top-mail-tel:hover,
 .top-mail-tel:focus {
   color: var(--selection-color);
+  stroke: var(--selection-color);
 }
 
-/* .top-mail-tel-mail,
-.top-mail-tel-tel {
-  display: flex;
-} */
-
 .title-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.6)),
-  url("/images/img_tytul.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url("/images/img_tytul.jpg");
   background-size: cover;
   font-family: roboto;
   color: #ffffff;
   font-weight: 900;
   width: 100%;
-  /* max-width: 1600px; */
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 94px;
@@ -232,7 +222,7 @@ ul {
   text-transform: uppercase;
   /* list-style-image: none; */
 }
-.third-title>h3 {
+.third-title > h3 {
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -275,43 +265,34 @@ ul {
   text-align: center;
   padding-bottom: 30px;
 }
-
-.social-media-icons {
-  all: unset;
+.social-list{
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
+}
+
+.social-list-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 18px;
 }
 
-.icon-social-bg {
+.social-icon {
   display: flex;
-  background-color: #ffffff;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-size: contain;
-  background-position: center;
-}
-
-.icon-social {
-  display: flex;
   fill: var(--icon-color);
-  background-position: center;
-  align-items: center;
-  justify-content: center;
-}
+ }
 
-.icon-social:hover {
+.social-icon:hover,
+.social-icon:focus {
   fill: white;
 }
-.icon-social-bg:hover {
-  background-color: var(--selection-color);
-}
 
-.icon-social:focus {
-  fill: white;
-}
-.icon-social-bg:focus {
+.social-icon:hover,
+.social-icon:focus {
   background-color: var(--selection-color);
 }
 
@@ -342,7 +323,8 @@ ul {
   border-radius: 4px;
 }
 
-.our-clients-icon:hover {
+.our-clients-icon:hover,
+.our-clients-icon:focus {
   fill: var(--selection-color);
   border-color: var(--selection-color);
   cursor: pointer;
@@ -352,10 +334,10 @@ ul {
   width: 170px;
   height: 92px;
 }
-.client-icon-use{
+.client-icon-use {
   position: absolute;
   fill: var(--icon-color);
-    width: 106px;
+  width: 106px;
   height: 60px;
 }
 
@@ -381,33 +363,32 @@ a.bottom-mail-tel {
   font-style: normal;
   text-decoration: none;
 }
+.bottom-mail-tel:hover,
 .bottom-mail-tel:focus {
   color: var(--selection-color);
 }
-.bottom-mail-tel:hover {
-  color: var(--selection-color);
-}
+
 ul.bottom-mail-tel {
   list-style-type: none;
 }
-.join-us>h3{
+.join-us > h3 {
   display: flex;
   font-size: 14px;
   line-height: 1.14;
   color: #ffffff;
 }
-.social-icon{
+.social-icon-footer {
   fill: #ffffff;
   background-color: #2196f3;
   background-size: 44px 44px;
   border-radius: 50%;
 }
-.social-icons-bg{
+.social-icons-bg {
   background-color: #2196f3;
   background-size: 44px 44px;
   border-radius: 50%;
-  }
-/* Portfolio */
+}
+/* ========Portfolio============== */
 
 .buttons {
   list-style-type: none;
@@ -430,13 +411,12 @@ ul.bottom-mail-tel {
   margin-right: 8px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--selection-color);
   color: #ffffff;
 }
-.button:focus {
-  color: var(--selection-color);
-}
+
 ul.portfolio {
   list-style-type: none;
   display: flex;
@@ -467,5 +447,5 @@ img {
 }
 .portfolio-cards {
   background: #ffffff;
-  flex-basis: calc((100% - 30px) / 4);
+  flex-basis: calc((100% - 60px) / 3);
 }

@@ -395,6 +395,7 @@ ul.bottom-mail-tel {
   font-size: 14px;
   line-height: 1.14;
   color: #ffffff;
+  padding-bottom: 20px;
 }
 .social-icons{
   display: flex;
@@ -416,7 +417,10 @@ ul.bottom-mail-tel {
   width: 20px;
   height: 20px;
 }
-
+.social-icons-bg:hover,
+.social-icons-bg:focus{
+background-color: var(--selection-color);
+}
 
 /* ========Portfolio============== */
 

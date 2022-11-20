@@ -112,27 +112,33 @@ ul {
 
 .icon-mail {
   fill: var(--secondary-font-color);
-}
-.icon-mail:hover,
-.icon-mail:focus {
-  fill: var(--selection-color);
-}
-
-.top-mail-tel {
-  /* all: unset; */
-  color: var(--secondary-font-color);
   text-decoration: none;
-  list-style-type: none;
-  display: flex;
-  font-size: 14px;
-  gap: 1rem;
   align-items: center;
 }
 
-.top-mail-tel:hover,
-.top-mail-tel:focus {
-  color: var(--selection-color);
-  stroke: var(--selection-color);
+.top-mail-tel {
+  color: var(--secondary-font-color);
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.top-mail-tel-tel,
+.top-mail-tel-mail {
+  display: flex;
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  gap: 1rem;
+  }
+
+.top-mail-tel-tel:hover,
+.top-mail-tel-mail:hover,
+.top-mail-tel-mail:focus
+.top-mail-tel-tel:focus {
+ color: var(--selection-color);
+ stroke: var(--selection-color);
 }
 
 .title-background {
@@ -146,6 +152,7 @@ ul {
   color: #ffffff;
   font-weight: 900;
   width: 100%;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 94px;
@@ -230,7 +237,6 @@ ul {
 .container-images {
   display: flex;
   gap: 30px;
-  /* flex-basis: calc((100% - 30px) / 3); */
   list-style: none;
   margin-bottom: 94px;
 }
@@ -377,17 +383,22 @@ ul.bottom-mail-tel {
   line-height: 1.14;
   color: #ffffff;
 }
-.social-icon-footer {
-  fill: #ffffff;
-  background-color: #2196f3;
-  background-size: 44px 44px;
+.social-icons{
+  display: flex;
+  list-style: none;
+}
+.social-icons-footer {
+  stroke: #ffffff;
   border-radius: 50%;
 }
 .social-icons-bg {
-  background-color: #2196f3;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
   background-size: 44px 44px;
   border-radius: 50%;
 }
+
+
 /* ========Portfolio============== */
 
 .buttons {
@@ -415,6 +426,9 @@ ul.bottom-mail-tel {
 .button:focus {
   background-color: var(--selection-color);
   color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 ul.portfolio {
@@ -448,4 +462,9 @@ img {
 .portfolio-cards {
   background: #ffffff;
   flex-basis: calc((100% - 60px) / 3);
+}
+.portfolio-cards:hover,
+.portfolio-cards:focus{
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

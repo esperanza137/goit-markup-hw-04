@@ -148,10 +148,12 @@ ul {
     ),
     url("/images/img_tytul.jpg");
   background-size: cover;
+  background-position: center;
   font-family: roboto;
   color: #ffffff;
   font-weight: 900;
-  width: 100%;
+  width: 100%;  
+  height: 100%;
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -284,24 +286,26 @@ ul {
   justify-content: center;
   align-items: center;
   margin-bottom: 18px;
+  border-radius: 50%;
 }
 
 .social-icon {
   display: flex;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   fill: var(--icon-color);
  }
 
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--selection-color);
+  /* fill: white; */
+}
+
 .social-icon:hover,
-.social-icon:focus {
+.social-icon:focus{
   fill: white;
 }
-
-.social-icon:hover,
-.social-icon:focus {
-  background-color: var(--selection-color);
-}
-
 .our-team-frame {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -331,20 +335,23 @@ ul {
 
 .our-clients-icon:hover,
 .our-clients-icon:focus {
-  fill: var(--selection-color);
+  stroke: var(--selection-color);
+  /* fill: var(--selection-color); */
   border-color: var(--selection-color);
   cursor: pointer;
 }
 .client-icon-svg {
-  position: relative;
+  display: flex;
   width: 170px;
   height: 92px;
 }
 .client-icon-use {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--icon-color);
-  width: 106px;
-  height: 60px;
+  /* width: 106px;
+  height: 60px; */
 }
 
 .footer-background {
@@ -389,6 +396,7 @@ ul.bottom-mail-tel {
 }
 .social-icons-footer {
   stroke: #ffffff;
+  fill: #ffffff;
   border-radius: 50%;
 }
 .social-icons-bg {

@@ -360,7 +360,13 @@ ul {
   padding-bottom: 60px;
   margin-inline: auto;
 }
-
+.footer-box{
+  display: flex;
+  align-items: center;
+}
+.logo-address{
+  margin-right: 70px;
+}
 address {
   font-style: normal;
   text-decoration-line: none;
@@ -394,16 +400,21 @@ ul.bottom-mail-tel {
   display: flex;
   list-style: none;
 }
-.social-icons-footer {
-  stroke: #ffffff;
-  fill: #ffffff;
-  border-radius: 50%;
-}
 .social-icons-bg {
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
-  background-size: 44px 44px;
-  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%; 
+  justify-content:center;
+  align-items: center;
+}
+.social-icons-footer {
+  display: flex;
+  /* stroke: #ffffff; */
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
 }
 
 

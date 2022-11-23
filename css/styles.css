@@ -353,8 +353,11 @@ a.social-list-link:focus svg {
 }
 .client-icon-link:hover,
 .client-icon-link:focus {
+
+/* a.client-icon-link:hover svg,
+a.client-icon-link:focus svg {
   fill: var(--selection-color);
-}
+} */
 
 .client-icon-svg {
   display: flex;
